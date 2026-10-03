@@ -1,0 +1,17 @@
+[project]
+name = "a-ponte"
+version = "1.0.0"
+description = "Desafio A Ponte: servidor MCP de salas + agente A2A que e host MCP por dentro"
+requires-python = ">=3.10"
+# Versoes travadas. Nenhum SDK de provedor de LLM: o agente decide por regra.
+dependencies = [
+    "mcp==2.3.0",
+    "mcp-types==2.3.0",
+    "httpx2==2.13.1",
+    "pydantic==2.13.5",
+    "starlette==1.7.0",
+    "uvicorn==0.54.0",
+]
+
+[tool.uv]
+package = false
